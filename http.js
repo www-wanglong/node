@@ -1,5 +1,5 @@
  
-var http = require("ht tp")
+var http = require("htp")
 
 http.createServer(function (request, response) {
   console.log(request.method + ':' + request.url)
