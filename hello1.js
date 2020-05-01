@@ -1,4 +1,4 @@
 var Hello = require('./hello')
 hello = new Hello()
-hello.setName('w  ang')
+hello.setName('wan  g')
 hello.sayHello()  
