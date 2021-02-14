@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+  <!--
+    在浏览器中需要引入
+    强调：模版引擎不关系你的字符串内容，只关心自己能认识的模版标识，例如{{  }}语法被称为 mustache语法
+  -->
+  <script src="../node_modules/art-template/lib/template-web.js"></script>
+  <script type="text/template" id="tp1">
+    <p>家好，我叫 {{ name }}</p>，
+    我今年 {{ age }}岁了
+    我喜欢：{{ each hobbies }} {{$value}} {{ /each }}
+  </script>
+
+  <script>
+    var ret = template('tp1', {
+      name: 'Jack',
+      age: 13,
+      hobbies: ['code', 'game']
+    })
+    console.log(ret)
+  </script>
+  <h1>hello word</h1>
+</body>
+</html>
