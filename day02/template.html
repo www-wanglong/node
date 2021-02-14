@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <h1>Directory listing for</h1>
+    {{ each files }}
+    <li>{{ $value }}</li>
+    {{ /each }}
+  </body>
+</html>
