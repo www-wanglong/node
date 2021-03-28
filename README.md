@@ -19,3 +19,23 @@
 - 302 临时重定向 浏览器不记忆
   + 反之
 
+## node - node package manager
+  + 网站 npmjs.com
+  + 命令行工具
+   `npm --version`
+   `npm install --global npm`
+   + 常用命令
+    `npm init`
+    `npm init -y`
+    `npm install`
+    `npm install 包名`
+    `npm install --save 包名`
+    `npm uninstall 包名`
+    `npm uninstall --save 包名`
+  + cnpm
+    `npm install --global cnpm`
+    `npm install jquery --registry=https://registry.npm.taobao.org`
+    `npm config set registry https://registry.npm.taobao.org`
+    `npm config list`
+## Express
+
