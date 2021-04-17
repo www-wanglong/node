@@ -1,0 +1,21 @@
+<!-- 浏览器收到html响应内容之后，就要开始从上倒下依次解析，
+  当在解析过程中发现：link script img iframe video audio
+  等具有 src/href属性标签（具有外链）的时候，浏览器会自动发起新的请求-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>public</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <h1>Directory listing for</h1>
+    <div>hello world</div>
+    <ul>
+      {{ each comments }}
+      <li>{{ $value.name }}说：{{ $value.message }},{{ $value.dataTime }}</li>
+      {{ /each }}
+    </ul>
+    <a class="btn" href="/post">发表</a>
+  </body>
+</html>

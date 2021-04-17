@@ -38,4 +38,9 @@
     `npm config set registry https://registry.npm.taobao.org`
     `npm config list`
 ## Express
+## nodemon
+   自动重启项目
+  `npm install --global nodemon`
+   nodemon
+## 路由
 
