@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>发表</title>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <form action="pingLun" method="get">
+      <div>
+        <span>姓名</span>
+        <input type="text" id="input-name" name="name" required minlength="2" maxlength="10" placeholder="请输入你的姓名"></input>
+      </div>
+      <div>
+        <span>内容</span>
+        <textarea id="input-message" required name="message" minlength="5" maxlength="30" placeholder="请输入内容" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit">发表</button>
+    </form>
+  </body>
+</html>
